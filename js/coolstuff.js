@@ -1,8 +1,11 @@
-window.onload = function() {
-  window.setTimeout(function() {
-    var ad = document.getElementById('cooldude');
-    if (ad) {
-      alert('You should download Ad-Block Plus');
-    }
-  }, 1000);
+window.adBlockAdd = {
+  isEnabled: function() {
+    setTimeout(function() {
+      var ad = document.getElementById('cooldude');
+      if (ad) {
+        return false;
+      }
+      return true;
+    }, 1000);
+  }
 };
