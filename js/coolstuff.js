@@ -1,11 +1,20 @@
-window.adBlockAdd = {
-  isEnabled: function() {
-    setTimeout(function() {
-      var ad = document.getElementById('cooldude');
-      if (ad) {
-        return false;
-      }
-      return true;
-    }, 1000);
-  }
+window.adBlockAd = {
+  isEnabled: function(callback) {
+    var ad = document.getElementById('cooldude');
+    if (ad) {
+      callback(false);
+    }
+    else {
+      callback(true);
+    }
+  },
 };
+
+window.addEventListener("load", function() {
+  console.log('hi');
+
+  adBlockAd.isEnabled(function(flag) {
+    console.log(flag);
+  });
+
+}, false);
