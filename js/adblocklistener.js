@@ -3,7 +3,7 @@
   });
 
   window.addEventListener('adBlockDisabled', function(e) {
-    var ad = document.getElementById('cooldude');
+    var ad = document.getElementById('adblock-detector');
     var div = document.createElement('div');
     div.className = 'adblock-alert';
     var p = document.createElement('p');
