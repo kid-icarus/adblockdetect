@@ -1,5 +1,4 @@
 (function() {
-
   window.addEventListener('adBlockEnabled', function(e) {
   });
 
@@ -12,5 +11,4 @@
     div.appendChild(p);
     ad.parentNode.appendChild(div);
   });
-
 })();
