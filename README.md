@@ -7,7 +7,7 @@ an 'adBlockEnabled' or 'adBlockDisabled' event accordingly.
 First of all, add this markup to your page wherever you'd like.
 
 ```
-<div><img id="duh-ad" src="img/ad.png" /></div>
+<div id="adblock-detect"><img src="img/ad.png" /></div>
 ```
 
 That's a 1-pixel transparent image that will be blocked if AdBlock is enabled.
