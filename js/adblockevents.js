@@ -4,7 +4,8 @@
 
   window.addEventListener("load", function() {
     setTimeout(function() {
-      var ad =  document.getElementById('adblock-detector');
+      var adDiv =  document.getElementById('adblock-detector');
+      var ad = adDiv.children[0];
       if (ad) {
         window.dispatchEvent(adBlockDisabled);
       }
